@@ -1,7 +1,7 @@
-import { Person } from "../src/utils/Person";
+import Person from "../../src/person/Person";
 
-describe("Person Test", () => {
-  test("person constructor", () => {
+describe("Person 테스트", () => {
+  test("person 인스턴스를 생성한다.", () => {
     // given
     const name: string = "ks-kim";
     const age: number = 29;
