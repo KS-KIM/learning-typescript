@@ -15,4 +15,17 @@ describe("비구조화 할당 학습 테스트", () => {
     expect(region).toBe("서울특별시");
     expect(rest).toEqual(expect.objectContaining({ address1: "송파구", address2: "잠실", address3: "루터회관" }));
   });
+  test("배열의 비구조화 할당을 수행한다.", () => {
+    // given
+    const numbers: Array<number> = [1, 2, 3, 4, 5, 6, 7];
+
+    // when
+    const [first, second, third, ...rest] = numbers;
+
+    // then
+    expect(first).toBe(1);
+    expect(second).toBe(2);
+    expect(third).toBe(3);
+    expect(rest).toEqual(expect.arrayContaining([4, 5, 6, 7]));
+  });
 });
