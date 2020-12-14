@@ -1,6 +1,4 @@
 import { readFileSync, readFile } from "fs";
-import { resolve } from "path";
-import { reject } from "ramda";
 
 describe("fs 학습 테스트", () => {
   test("동기 방식으로 파일을 읽는다.", () => {
