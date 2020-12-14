@@ -31,11 +31,6 @@
     "moduleFileExtensions": [
       "ts",
       "js"
-    ],
-    "globals": {
-      "ts-jest": {
-        "enableTsDiagnostics": true
-      }
-    }
+    ]
   }
 }
