@@ -117,4 +117,7 @@ dist
 .idea
 *.iml
 
+# database configurations
+db
+
 # End of https://www.toptal.com/developers/gitignore/api/node
