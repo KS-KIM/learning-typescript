@@ -31,6 +31,7 @@
     "dev": "ts-node src",
     "build": "tsc && node dist",
     "test": "jest",
+    "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js",
     "lint": "eslint './src/**/*.{ts,tsx,js,jsx}'",
     "lint:fix": "eslint --fix './src/**/*.{ts,tsx,js,jsx}'"
   },
